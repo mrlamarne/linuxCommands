@@ -8,6 +8,11 @@ echo 'Acquire:http::proxy "http://10.1.2.5:8080/";' | sudo tee -a /etc/apt/apt.c
 //Trouver le processus qui vérouille le lock dpkg 
 sudo lsof /var/lib/dpkg/lock/
 
+//Redémarrer des services
+//mysql
+sudo service mysql restart
+//carte réseau
+sudo service networking restart
 
 
 //BSD pfSense
