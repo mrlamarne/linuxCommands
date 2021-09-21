@@ -10,6 +10,13 @@ echo 'http_proxy="http://10.1.2.5:8080/";' | sudo tee -a /etc/environment
 echo 'https_proxy="http://10.1.2.5:8080/";' | sudo tee -a /etc/environment
 echo 'ftp_proxy="http://10.1.2.5:8080/";' | sudo tee -a /etc/environment
 
+//infos sur les connexions
+netstat -tap //Liste les connexion établies
+netstat -l //port en écoute
+netstat -lt //port tcp en écoute
+netstat -lu //port udp en écoute
+netstat -p //programme et port associé
+netstat -o //affichage des processus associé à chaque connexion
 
 
 //Trouver le processus qui vérouille le lock dpkg 
