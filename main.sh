@@ -1,5 +1,6 @@
 //Ajouter le serveur apt-cache local
-echo 'Acquire::http::proxy "http://10.1.0.10:9999/";' | sudo tee -a /etc/apt/apt.conf.d/70debconf
+//echo 'Acquire::http::proxy "/";' | sudo tee -a /etc/apt/apt.conf.d/70debconf
+echo 'Acquire::http::proxy "http://172.25.254.21/";' | sudo tee -a /etc/apt/apt.conf.d/70debconf
 
 //Ajouter le proxy http pour apt
 //echo 'Acquire::http::proxy "http://10.1.2.5:8080/";' | sudo tee -a /etc/apt/apt.conf.d/proxy
